@@ -7,6 +7,29 @@
     <title>Handlebars training</title>
 </head>
 <body>
+    <h1>Game of Thrones</h1>
+    <!-- 
+        <ul class="character-list-container">
+            <li class="character">
+                <img src="images/jon-snow.jpg" alt="jon-snow">
+                <h2>Jon Snow</h2>
+                <p>Actor: Kit Harrington</p>
+                <p>House: Stark</p>
+                <p>Whereabouts: The Wall</p>
+            </li>
+        </ul> 
+    -->
+    <ul class="character-list-container"></ul>
+
+    <script id="character-list-container" type="text/x-handlebars-template">
+        <li class="character">
+            <img src="images/{{ shortCode }}.jpg" alt="jon-snow">
+            <h2>{{ name }}</h2>
+            <p>Actor: {{ actor }}</p>
+            <p>House: {{ Stark }}</p>
+            <p>Whereabouts: {{ location }}</p>
+        </li>
+    </script>
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/handlebars.min-v4.7.8.js"></script>
     <script src="js/script.js"></script>
