@@ -36,3 +36,11 @@ let cast = {
 		}
 	]
 }
+
+let characterTemplate = document.getElementById('character-template').innerHTML; 
+let compiledCharacterTemplate = Handlebars.compile(characterTemplate);
+console.log(compiledCharacterTemplate(cast.characters[0]));
+
+let characterList = document.querySelector('.character-list-container');
+console.log(characterList);
+characterList.innerHTML = compiledCharacterTemplate(cast.characters[2]);
