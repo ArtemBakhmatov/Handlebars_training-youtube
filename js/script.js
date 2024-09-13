@@ -43,4 +43,4 @@ console.log(compiledCharacterTemplate(cast.characters[0]));
 
 let characterList = document.querySelector('.character-list-container');
 console.log(characterList);
-characterList.innerHTML = compiledCharacterTemplate(cast.characters[2]);
+characterList.innerHTML = compiledCharacterTemplate(cast);

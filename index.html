@@ -22,13 +22,15 @@
     <ul class="character-list-container"></ul>
 
     <script id="character-template" type="text/x-handlebars-template">
+        {{#each characters}} <!-- это цикл -->
         <li class="character">
             <img src="images/{{ shortCode }}.jpg" alt="jon-snow">
-            <h2>{{ name }}</h2>
+            <h2>{{ @index }} {{ @first }} {{ @last }} {{ name }}</h2>
             <p>Actor: {{ actor }}</p>
             <p>House: {{ Stark }}</p>
             <p>Whereabouts: {{ location }}</p>
         </li>
+        {{/each}} <!-- это цикл -->
     </script>
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/handlebars.min-v4.7.8.js"></script>
